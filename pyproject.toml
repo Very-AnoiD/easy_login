@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "easy-login"
+version = "0.1.0"
+description = "This is a test package for research/training purposes and should not be used."
+authors = ["Very AnoiD  <very.AnoiD.excercise@gmail.com>"]
+readme = "README.md"
+exclude = [
+    "venv", ".git", ".mypy_cache"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
