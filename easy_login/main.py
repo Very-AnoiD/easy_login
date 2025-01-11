@@ -9,6 +9,17 @@ class ValidateLogin:
             return True
         return False
 
+    def safe_compare(self, cred: str, stored_cred: str):
+        if cred in self._creds:
+            return True
+        if cred == stored_cred:
+            self._creds.append(cred)
+            return True
+        return False
+
+    def safe_encrypt(self, cred: str):
+        return cred
+
     @staticmethod
     def process_creds(valid_creds: list[str]):
         valid_creds.append("letmein")
