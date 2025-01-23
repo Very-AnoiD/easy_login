@@ -1,1 +1,1 @@
-from easy_login.main import ValidateLogin
+from easy_login.main import FlaskApiAuth
