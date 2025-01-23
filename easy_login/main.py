@@ -23,7 +23,7 @@ class FlaskApiAuth:
 
     def safe_api_validate(self, request_headers):
         auth_header_value = None
-        for header in self.auth_header_value:
+        for header in self.auth_headers:
             auth_header_value = request_headers.get(header)
         if not auth_header_value:
             return None
