@@ -1,2 +1,0 @@
-easy_login @ git+https://github.com/Very-AnoiD/test@9449407
-
