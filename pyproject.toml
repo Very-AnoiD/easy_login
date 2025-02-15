@@ -9,7 +9,7 @@ exclude = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "<4.0,>=3.8"
 
 
 [tool.poetry.group.dev.dependencies]
